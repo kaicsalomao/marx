@@ -1,0 +1,188 @@
+<game>
+  <!-- Cena de entrada do jogo -->
+  <scene id="1">
+    <music play="./assets/entrada.mp3"/>
+    <msg delay-before="700" type-vel="30">
+      _ _    ,    _     
+      //\/\arx s  (()uest
+                    `    
+alunos: Kaic Salomão, Jônatas Aragão, Renato Inojosa, Willow, Luan Arruda, Vitor Gabriel, Maria Eduarda
+
+    </msg>
+    <option>
+      <query go-to="2">Iniciar o jogo</query>
+      <query go-to="11">Sair</query>
+    </option>
+  </scene>
+  
+  <!-- Primeira cidade: Cidade da Consciência -->
+  <scene id="2">
+    <clear/>
+    <music play="./assets/cidade1.mp3"/>
+    <msg color="cyan" delay-before="500">Você está na cidade da Consciência
+</msg>
+
+    <msg color="green" wrap-line="false" delay-before="1000">BEM:</msg>
+    <msg delay-before="500" type-vel="50">Olá, Marx, meu nome é Bem.</msg>
+    <msg delay-before="1000" type-vel="50">Neste mundo enfrentamos uma grande calamidade: os opressores capitalistas. Eles detêm o poder e os meios de produção, trazendo desequilíbrio.</msg>
+    <msg delay-before="1500" color="green" wrap-line="false" type-vel="50">
+BEM:</msg>
+    <msg delay-before="1000" type-vel="50">Nós, o proletariado, carecemos de educação. Poderias ajudar-nos?
+</msg>
+    <option>
+      <query go-to="3">Sim: Entregar seu livro sobre ideias para a libertação do proletariado.</query>
+      <query go-to="12">Não: Ignorar Bem.</query>
+    </option>
+  </scene>
+
+<!-- Cena 3: Segunda cidade - Cidade da Desigualdade -->
+<scene id="3">
+          <!-- Mensagem de Bem -->
+    <msg color="green" wrap-line="false">
+BEM:</msg>
+    <msg>Marx! Eu li o seu livro, muito obrigado por trazer luz à ignorância que nos aprisiona
+    </msg>
+            <msg color="green" wrap-line="false">BEM:</msg>
+    <msg>Siga para a cidade da Desigualdade, lá minha amiga Ana irá falar com você.
+  </msg>
+  <msg type-vel="500">...</msg>
+  <music play="./assets/cidade2.ogg"/>
+  <msg color="cyan" delay-before="500">Você chegou à Cidade da Desigualdade
+</msg>
+  <msg color="green" wrap-line="false" delay-before="500">ANA:</msg>
+  <msg delay-before="1500" type-vel="50">Bem-vindo, Marx. Fiquei sabendo do que fez na cidade da Consciência.
+</msg>
+  <msg color="green" wrap-line="false" delay-before="500">ANA:</msg>
+  <msg delay-before="2000" type-vel="50">Nessa cidade há um grande fluxo de empresas, mas os trabalhadores recebem pouco. Como resolver isso?
+</msg>
+  <option>
+    <query go-to="6">Responder: Unir os trabalhadores para exigir salários justos</query>
+    <query go-to="7">Responder: Lutar pela igualdade de direitos trabalhistas</query>
+  </option>
+</scene>
+
+  <!-- Cena 6: Terceira cidade - Cidade da Alienacão -->
+  <scene id="6">
+      <msg color="green" wrap-line="false" delay-before="500">
+ANA:</msg>
+  <msg delay-before="1500" type-vel="50">Parabéns, Marx. Sua liderança foi fundamental para essa conquista.
+</msg>
+    <msg type-vel="500">...</msg>
+    <music play="./assets/cidade3.mp3"/>
+    <msg color="cyan" delay-before="1000">Você chegou à Cidade da Alienacão. Aqui você enfrentará novos desafios.
+    </msg>
+    <msg wrap-line="false" color="green" delay-before="1500" type-vel="50">FRENK:</msg> 
+    <msg delay-before="2000" type-vel="50">Olá Marx, sou Frank, um trabalhador que viu suas ideias sobre a mais-valia em ação.
+  </msg>
+    
+    <msg wrap-line="false" color="green" delay-before="1500" type-vel="50">FRENK:</msg> 
+    <msg delay-before="2500" type-vel="50">Contudo, a alienação em relação aos produtos que nós mesmos produzimos é uma ferida aberta em nossa sociedade. Como podemos curá-la?
+  </msg>
+    <option>
+      <query go-to="8">Responder: Promover a propriedade coletiva dos meios de produção</query>
+    </option>
+  </scene>
+
+  
+  <!-- Alienação 2 -->
+  <scene id="7">
+      <msg color="green" wrap-line="false" delay-before="500">
+ANA:</msg>
+  <msg delay-before="1500" type-vel="50">Parabéns, Marx. Sua coragem inspirou mudanças significativas.
+</msg>
+
+    <msg type-vel="500">...</msg>
+    <music play="./assets/cidade3.mp3"/>
+    <msg color="cyan" delay-before="1000">Você chegou à Cidade da Alienacão. Aqui você enfrentará novos desafios.
+    </msg>
+    <msg wrap-line="false" color="green" delay-before="1500" type-vel="50">FRENK:</msg> 
+    <msg delay-before="2000" type-vel="50">Olá Marx, sou Frank, um trabalhador que viu suas ideias sobre a mais-valia em ação.
+  </msg>
+    
+    <msg wrap-line="false" color="green" delay-before="1500" type-vel="50">FRENK:</msg> 
+    <msg delay-before="2500" type-vel="50">Contudo, a alienação em relação aos produtos que nós mesmos produzimos é uma ferida aberta em nossa sociedade. Como podemos curá-la?
+  </msg>
+    <option>
+      <query go-to="8">Responder: Promover a propriedade coletiva dos meios de produção</query>
+    </option>
+  </scene>
+
+  <!-- Cena 8: Quarta cidade - Cidade da Corrupção -->
+  <scene id="8">
+        <msg wrap-line="false" color="green" delay-before="1000" type-vel="50">
+FRENK:</msg> 
+    <msg delay-before="2000" type-vel="50">Muito bem, Marx. Continue lutando pela libertação do proletariado.
+  </msg>
+  <msg type-vel="500">...</msg>
+    <music play="./assets/cidade4.mp3"/>
+    <msg color="cyan" delay-before="1000">Você chegou à Cidade da Corrupção.
+    </msg>
+    <msg wrap-line="false" color="green" delay-before="1500" type-vel="50">HELENA:</msg>
+    <msg>Olá Marx, enfrentamos corrupção e falta de transparência no governo.
+  </msg>
+
+    <msg wrap-line="false" color="green" delay-before="1500" type-vel="50">HELENA:</msg>
+    <msg>Como promover a integridade e a justiça?
+  </msg>
+    <option>
+      <query go-to="9">Responder: Implementar medidas anticorrupção</query>
+      <query go-to="10">Responder: Envolver a comunidade na tomada de decisões</query>
+    </option>
+  </scene>
+
+<!-- Cena 9: Resolução da quarta cidade (implementar medidas anticorrupção) -->
+<scene id="9">
+  <music play="./assets/vitoria.mp3"/>
+  <msg wrap-line="false" color="yellow" type-vel="70" delay-before="2000">
+Parabéns! </msg>
+  <msg wrap-line="false" color="green" delay-before="1500" type-vel="50">
+HELENA:</msg>
+  <msg delay-before="200" type-vel="50">Marx, suas ações mostraram que é possível combater a corrupção com determinação.
+</msg>
+  <msg color="cyan" delay-before="500" wrap-line="false">Implementar medidas anticorrupção foi crucial para promover a integridade e a justiça. </msg>
+  <msg color="cyan" delay-before="500">O jogo termina aqui.</msg> 
+</scene>
+
+<!-- Cena 10: Resolução da quarta cidade (envolver a comunidade na tomada de decisões) -->
+<scene id="10">
+  <music play="./assets/vitoria.mp3"/>
+  <msg wrap-line="false" color="yellow" type-vel="70" delay-before="2000" >
+Parabéns! </msg>
+  <msg wrap-line="false" color="green" delay-before="1500" type-vel="50">
+HELENA:</msg>
+  <msg delay-before="200" type-vel="50">Marx, a participação da comunidade nas decisões é essencial para construir um futuro mais justo e transparente.
+</msg>
+  <msg color="cyan" wrap-line="false" delay-before="1000">O envolvimento cívico da comunidade foi fundamental para promover a integridade e a justiça. </msg>
+  <msg color="cyan" delay-before="500" wrap-line="false">O jogo termina aqui.</msg>
+</scene>
+
+  <!-- Fechamento sem texto -->
+  <scene id="11"></scene>
+
+  <!-- Cena de mal apresentação para a segunda cidade -->
+  <scene id="12">
+        <msg delay-before="1500" color="green" wrap-line="false" type-vel="50">
+BEM:</msg>
+    <msg delay-before="1000" type-vel="50">Você realmente vai nos deixar neste sofrimento?
+  </msg>
+    <msg delay-before="600" color="green" wrap-line="false" type-vel="50">BEM:</msg>
+    <msg delay-before="500">Desculpe o incômodo.
+  </msg>
+    <msg type-vel="140">...</msg>
+    <msg color="cyan" delay-before="500">Você parte à caminho da Cidade da Desigualdade
+  </msg>
+    <music play="./assets/cidade2.ogg"/>
+    <msg color="green" wrap-line="false" delay-before="1500">ANA:</msg>
+  <msg delay-before="700" type-vel="50">Bem-vindo, Marx. 
+</msg>
+  
+  <msg color="green" wrap-line="false" delay-before="500">ANA:</msg>
+  <msg delay-before="2000" type-vel="50">Nessa cidade há um grande fluxo de empresas, mas os trabalhadores recebem pouco. Como resolver isso?
+</msg>
+  <option>
+    <query go-to="6">Responder: Unir os trabalhadores para exigir salários justos</query>
+    <query go-to="7">Responder: Lutar pela igualdade de direitos trabalhistas</query>
+  </option>
+</scene>
+</game>
+
